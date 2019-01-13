@@ -1,0 +1,4 @@
+#以分钟为精度过滤nginx日志
+awk   -F '[ :]' '$4":"$5":"$6~/DATETIMEMIN/{print $0}' /usr/local/nginx/logs/access.log
+#以小时为精度过滤nginx日志
+awk   -F '[ :]' '$4":"$5~/DATETIMEHOUR/{print $0}' /usr/local/nginx/logs/access.log

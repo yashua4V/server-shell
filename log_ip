@@ -1,0 +1,1 @@
+UserParameter=log_ip[*],/usr/local/etc/def_web_dos.sh $1 $2
