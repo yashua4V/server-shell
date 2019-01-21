@@ -21,6 +21,8 @@ do
           let score+=50;;
         test.sh)
           let score+=60;;
+        ma)
+          let score+=70;;
         esac
     done
   namesh=${i##*-}
@@ -84,6 +86,13 @@ do
     namebase=sy-befores-test-sy.sh 
     shname=${namebase//sy/$name}
     echo -e  "拼音简写是:\033[34m$name\033[0m 建议修改脚本名称为\033[31m$shname\033[0m 存放路径 \033[31m/hui_py/git/bt/script/befores\033[0m"
+    echo ''
+    echo -e  '#################################';;
+  170)
+    echo -e  -e  "\033[32m$i\033[0m 的类型是:\033[33m后端代理手机版\033[0m"
+    namebase=sy-back-front_desk-sy.sh
+    shname=${namebase//sy/$name}
+    echo -e  -e "拼音简写是:\033[34m$name\033[0m 建议修改脚本名称为\033[31m\033[31m$shname\033[0m\033[0m 存放路径 \033[31m/hui_py/git/bt/script/back\033[0m"
     echo ''
     echo -e  '#################################';;
   *)
