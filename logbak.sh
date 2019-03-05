@@ -18,4 +18,5 @@ do
         rm -rf $k
     done    
 done
-kill -USR1 $(cat $workpath/nginx.pid) #重启nginx服务，完成日志分割
+#kill -USR1 $(cat $workpath/nginx.pid) #重启nginx服务，完成日志分割
+/usr/local/nginx/sbin/nginx -s reload
